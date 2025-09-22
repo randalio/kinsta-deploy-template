@@ -43,15 +43,15 @@ Add a secret called:
 ### 4️⃣ Add Kinsta Connection Details to GitHub Secrets
 Add these secrets in the same place:
 
-| Secret Name             | Value                                                                 |
+| Secret Name             | Example Values                                                                 |
 |--------------------------|-----------------------------------------------------------------------|
 | `KINSTA_STAGING_IP`      | `00.000.00.000`                                                      |
 | `KINSTA_STAGING_USER`    | `username12345`                                                       |
-| `KINSTA_STAGING_PORT`    | `19486`                                                              |
+| `KINSTA_STAGING_PORT`    | `12345`                                                               |
 | `KINSTA_STAGING_PATH`    | `/www/STAGING_SITE_FOLDER/public/wp-content/themes/PROJECT_FOLDER`       |
 | `KINSTA_LIVE_IP`         | `00.000.00.000`                                                        |
 | `KINSTA_LIVE_USER`       | `username12345`                                                       |
-| `KINSTA_LIVE_PORT`       | `26545`                                                              |
+| `KINSTA_LIVE_PORT`       | `67890`                                                              |
 | `KINSTA_LIVE_PATH`       | `/www/LIVE_SITE_FOLDER/public/wp-content/themes/PROJECT_FOLDER`       |
 
 ---
