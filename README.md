@@ -15,7 +15,7 @@ ssh-keygen -t rsa -b 4096 -C "github-kinsta-deploy"
 ### 2️⃣ Add Public Key to Kinsta Server
 SSH into your Kinsta environment using the credentials they gave you (password or existing key):
 ```bash
-ssh -p 19486 uavionix2025@35.224.70.159
+ssh -p 19486 username12345@00.000.00.000
 ```
 
 Then add your **public key**:
@@ -48,11 +48,11 @@ Add these secrets in the same place:
 | `KINSTA_STAGING_IP`      | `00.000.00.000`                                                      |
 | `KINSTA_STAGING_USER`    | `username12345`                                                       |
 | `KINSTA_STAGING_PORT`    | `19486`                                                              |
-| `KINSTA_STAGING_PATH`    | `/www/SITE_FOLDER/public/wp-content/themes/PROJECT_FOLDER`       |
+| `KINSTA_STAGING_PATH`    | `/www/STAGING_SITE_FOLDER/public/wp-content/themes/PROJECT_FOLDER`       |
 | `KINSTA_LIVE_IP`         | `00.000.00.000`                                                        |
 | `KINSTA_LIVE_USER`       | `username12345`                                                       |
 | `KINSTA_LIVE_PORT`       | `26545`                                                              |
-| `KINSTA_LIVE_PATH`       | `/www/SITE_FOLDER/public/wp-content/themes/PROJECT_FOLDER`       |
+| `KINSTA_LIVE_PATH`       | `/www/LIVE_SITE_FOLDER/public/wp-content/themes/PROJECT_FOLDER`       |
 
 ---
 
@@ -108,7 +108,7 @@ jobs:
 ### 6️⃣ Test the Connection Locally
 Before letting GitHub Actions run, test your key locally:
 ```bash
-ssh -i ~/.ssh/kinsta_github -p 19486 uavionix2025@35.224.70.159
+ssh -i ~/.ssh/kinsta_github -p 19486 username12345@00.000.00.000
 ```
 - If it connects without asking for a password → ✅ keys are correct.  
 Do the same for live (`-p 26545`).  
@@ -126,11 +126,11 @@ You’ll see the workflow run in **GitHub → Actions** tab.
 ### 8️⃣ Verify Files on Server
 After a deploy, SSH into Kinsta:
 ```bash
-ssh -p 19486 uavionix2025@35.224.70.159
-cd /www/uavionix2025_383/public/wp-content/themes/uavionix-theme
+ssh -p 19486 username12345@00.000.00.000
+cd /www/LIVE_SITE_FOLDER/public/wp-content/themes/PROJECT_FOLDER
 ls -la
 ```
-You should see your `style.css`, `functions.php`, etc. directly in that folder (not nested in another `uavionix-theme` folder).  
+You should see your `style.css`, `functions.php`, etc. directly in that folder (not nested in another `project-theme` folder).  
 
 ---
 
