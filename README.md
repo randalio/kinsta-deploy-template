@@ -48,11 +48,11 @@ Add these secrets in the same place:
 | `KINSTA_STAGING_IP`      | `00.000.00.000`                                                      |
 | `KINSTA_STAGING_USER`    | `username12345`                                                       |
 | `KINSTA_STAGING_PORT`    | `19486`                                                              |
-| `KINSTA_STAGING_PATH`    | `/www/SITE_FOLDER/public/wp-content/themes/uavionix-theme`       |
+| `KINSTA_STAGING_PATH`    | `/www/SITE_FOLDER/public/wp-content/themes/PROJECT_FOLDER`       |
 | `KINSTA_LIVE_IP`         | `00.000.00.000`                                                        |
 | `KINSTA_LIVE_USER`       | `username12345`                                                       |
 | `KINSTA_LIVE_PORT`       | `26545`                                                              |
-| `KINSTA_LIVE_PATH`       | `/www/SITE_FOLDER/public/wp-content/themes/uavionix-theme`       |
+| `KINSTA_LIVE_PATH`       | `/www/SITE_FOLDER/public/wp-content/themes/PROJECT_FOLDER`       |
 
 ---
 
