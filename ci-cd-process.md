@@ -6,7 +6,7 @@ This document outlines our standard **CI/CD workflow** — from setting up a loc
 
 ## 📁 1. Local Development Setup (DevKinsta + VS Code)
 
-We use **[DevKinsta](https://kinsta.com/devkinsta/)** for local WordPress development and **VS Code** as our main development environment.
+Use **[DevKinsta](https://kinsta.com/devkinsta/)** for local WordPress development and **VS Code** for the integrated development environment.
 
 ### 1.1. Clone the Git Repository in VS Code
 
