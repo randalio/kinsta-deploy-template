@@ -29,7 +29,7 @@ We use **[DevKinsta](https://kinsta.com/devkinsta/)** for local WordPress develo
    ```bash
    cd ~/DevKinsta/public/<site-name>/wp-content/themes/
    ```
-- Clone directly into the current folder (`.`):
+- Use a period (`.`) to clone directly into the current folder (`.`):
    ```bash
    git clone git@github.com:your-org/your-repo.git .
    ```
