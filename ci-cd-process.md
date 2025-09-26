@@ -100,19 +100,22 @@ Follow this process whenever you build a new feature or make changes.
 
 ### 3.2. Merge Feature Branch → Staging (Deploy to Staging)
 
-When your feature is ready and tested locally:
+When your feature is ready and tested locally, **do not merge using the terminal.**  
+We handle all merges into `staging` through the **GitHub web interface** using a Pull Request (PR).
 
-1. Switch to `staging`:
+1. Push your feature branch to GitHub (if you haven’t already):  
    ```bash
-   git checkout staging
-   git pull origin staging
-   ```
+   git push origin feature/your-feature-name
 
-2. Merge your feature branch:
-   ```bash
-   git merge feature/your-feature-name
-   git push origin staging
-   ```
+2. Go to the project’s repository on GitHub.
+
+3. Click “Compare & pull request” or navigate to the Pull Requests tab and click “New pull request.”
+
+4. Set the base branch to staging and the compare branch to your feature branch (e.g., feature/your-feature-name).
+
+5. Review the changes, write a clear title and description, and click “Create pull request.”
+
+6. Request a review if required. Once approved, click “Merge pull request.”
 
 ✅ This triggers deployment to the **Staging Site**. Use this for QA, client review, and testing.
 
