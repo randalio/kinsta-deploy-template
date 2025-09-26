@@ -46,6 +46,8 @@ mv your-repo/.* .
 rm -rf your-repo
 ```
 
+You can also drag and drop them into the correct directory in your files, just make sure that you can see hidden .dotfiles, and be sure to move the .git file into the same folder as the theme folder.
+
 ✅ Make sure your `style.css`, `functions.php`, etc., live directly in:
 
 ```
