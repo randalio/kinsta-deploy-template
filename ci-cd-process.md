@@ -24,7 +24,7 @@ Use **[DevKinsta](https://kinsta.com/devkinsta/)** for local WordPress developme
 ✅ **Tip:** To avoid creating a nested folder with the repo’s name, you can clone directly into the theme directory from the integrated terminal:
 
 - Open the **terminal** in VS Code:  
-  - `View` → `Terminal`
+  - `Terminal` → `New Terminal`
 - Navigate to your theme directory:
    ```bash
    cd ~/DevKinsta/public/<site-name>/wp-content/themes/
